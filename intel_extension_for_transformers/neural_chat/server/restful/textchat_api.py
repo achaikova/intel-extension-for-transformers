@@ -459,7 +459,7 @@ class TextChatAPIRouter(APIRouter):
 router = TextChatAPIRouter()
 
 
-@router.post("/v1/models")
+@router.get("/v1/models")
 async def show_available_models():
     """Show available models. Right now we only have one model."""
     model_cards = [
